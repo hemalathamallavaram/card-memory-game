@@ -1,0 +1,55 @@
+/*
+
+
+
+*/
+
+.flip-box {
+  width: 100%;
+  height: 90%;
+  /* top:100px;
+  position: absolute;; */
+  border: 1px solid #f1f1f1;
+  display:flex;
+  flex-wrap: wrap;
+  margin:auto;
+  flex-direction: row;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 179px;
+  height: 130px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border:1px solid #9f9f9f;
+}
+svg{
+  width:200px;
+  height:100px;
+  top: 50%;
+  position: absolute;
+}
+.flip-box-front{
+  background-color: grey !important;
+
+}
+.flip-box-front {
+  width: 179px;
+  background-color: red;
+  height: 130px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-back {
+  width: 179px;
+  background-color: #4eb6c1;
+  height: 130px;
+  position: absolute;
+  color: white;
+}
